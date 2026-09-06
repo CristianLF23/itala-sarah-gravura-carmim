@@ -38,4 +38,11 @@ dialog{max-width:1240px;background:#11100ff8}.lightbox-top{position:sticky;top:-
 .footer-name{max-width:none!important;width:auto!important}.footer-name span{font:italic 400 44px/1 ItalaEditorial,Georgia,serif;letter-spacing:-.055em;white-space:nowrap}
 @media(min-width:700px){.brand{font-size:29px}.hero h1{font-size:clamp(170px,20vw,275px);width:75%;max-width:850px}.hero-copy{padding-top:170px}.flower-hero{width:490px;right:0;top:120px;opacity:.7}.flower-artist{width:200px;margin-top:-15px}.footer-name span{font-size:64px}}
 @media(min-width:1100px){.hero h1{font-size:clamp(235px,21vw,325px);max-width:940px}.hero-copy{padding-top:185px;padding-bottom:145px}.flower-hero{width:590px;right:3%;top:135px}.flower-artist{width:215px}.process-conversation{margin-top:100px;padding-top:65px}}
+/* The artist chapter is an intentional warm-paper pause, not pale ink. */
+.artist{background:#e8e0d3;color:#211518;--line:#c2b1a5;--muted:#65514e}
+.artist .section-rail{background:#ded3c3;border-color:#c2b1a5}
+.artist .section-rail h2,.artist .chapter-number,.artist .eyebrow,.artist-details dt{color:#862636}
+.artist .artist-copy>p.lead{color:#211518}.artist-copy>p:not(.eyebrow):not(.lead){color:#584742}
+.artist-details>div{border-color:#c2b1a5}.artist-details dd{color:#382a29}.artist .text-link{color:#702232}
+.flower-artist{opacity:1}
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
