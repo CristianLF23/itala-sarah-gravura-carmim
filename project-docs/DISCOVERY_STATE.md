@@ -1,5 +1,8 @@
 # Gravura Carmim
 
+## Revisão atual: dragão oriental detalhado
+CONFIRMED: trocar apenas o enfeite esquemático do contato por ilustração detalhada de tatuagem oriental. Preservar as demais decisões, incluindo A Artista em off-white. Gate PASS: nenhuma lacuna crítica para a substituição. Arte gerada com ferramenta integrada, otimizada para WebP transparente; não é foto de tatuagem real. Prompt e proveniência em DRAGAO-IREZUMI.md.
+
 ## Revisão vigente: identidade autoral e fundo contínuo
 CONFIRMED: cliente autorizou todas as melhorias propostas, incluindo lettering próprio, tinta responsiva ao toque, fichas das obras e bastidores. Conteúdo ausente deve receber disclaimer. Solicitou fundo vivo no restante da página e autorizou exploração de Blender, Higgsfield e Seedance. Nenhum emoji.
 

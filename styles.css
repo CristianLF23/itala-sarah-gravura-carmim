@@ -25,8 +25,8 @@ dialog{max-width:1240px;background:#11100ff8}.lightbox-top{position:sticky;top:-
 .brand{font:italic 25px/1 ItalaEditorial,Georgia,serif;letter-spacing:-.035em;text-transform:capitalize}
 .hero h1{font:italic 400 clamp(100px,28vw,170px)/.75 ItalaEditorial,Georgia,serif;letter-spacing:-.065em;width:min(100%,620px);margin:34px 0 38px;position:relative}
 .name-first,.name-last{display:block}.hero h1 .name-first{margin-left:0}.hero h1 .name-last{margin-left:.34em;margin-top:.035em}.hero h1 .name-period{margin-left:0;color:#c32d40}
-.dragon-engraving{width:240px;height:auto;margin:0 auto 35px;opacity:.85;pointer-events:none}
-@media(min-width:700px){.dragon-engraving{width:280px;margin-left:0}}
+.dragon-engraving{width:min(100%,360px);height:auto;margin:0 auto 35px;opacity:1;pointer-events:none;mask-image:linear-gradient(to right,transparent,#000 9%,#000 91%,transparent),linear-gradient(to bottom,transparent,#000 5%,#000 94%,transparent);mask-composite:intersect;-webkit-mask-image:linear-gradient(to right,transparent,#000 9%,#000 91%,transparent),linear-gradient(to bottom,transparent,#000 5%,#000 94%,transparent);-webkit-mask-composite:source-in}
+@media(min-width:700px){.dragon-engraving{width:min(100%,380px);margin-left:0}}
 .hero-copy{padding-top:160px;padding-bottom:135px}.hero-description{position:relative;max-width:280px}
 .chrysanthemum{pointer-events:none;user-select:none;object-fit:contain}
 .flower-hero{position:absolute;right:-102px;top:145px;width:300px;height:auto;opacity:.64;z-index:-1;transform:rotate(-14deg)}
