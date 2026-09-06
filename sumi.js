@@ -14,12 +14,12 @@
  vec2 turn(vec2 p,vec2 c,float r,float angle){vec2 d=p-c;float w=exp(-dot(d,d)/(r*r));return c+rot(angle*w)*d;}
  void main(){
  vec2 p=(v_uv-.5)*vec2(u_res.x/u_res.y,1.);p*=2.6;
- float t=u_time*.11;
- p+=.08*vec2(sin(t*.7),cos(t*.53));
- p=turn(p,vec2(.22,.52),.95,3.5+.35*sin(t*.63));
- p=turn(p,vec2(-.35,-.6),.85,-4.1+.28*cos(t*.47));
- p=turn(p,vec2(.78,-.06),.55,3.+.23*sin(t*.71));
- p=turn(p,vec2(-.72,.28),.47,-2.5+.28*cos(t*.8));
+ float t=u_time*.22;
+ p+=vec2(.12*sin(t*.7),.08+.12*(cos(t*.53)-1.));
+ p=turn(p,vec2(.22,.52),.95,3.5+.60*sin(t*.63));
+ p=turn(p,vec2(-.35,-.6),.85,-3.82+.50*(cos(t*.47)-1.));
+ p=turn(p,vec2(.78,-.06),.55,3.+.44*sin(t*.71));
+ p=turn(p,vec2(-.72,.28),.47,-2.22+.48*(cos(t*.8)-1.));
  p+=.11*vec2(sin(p.y*3.+t*.3),cos(p.x*3.2-t*.2));
  float field=p.x*.78+p.y*.36+.22*sin(p.y*2.9)+.12*cos(p.x*3.8)+.06*(noise(p*5.)-.5);
  float wave=field*19.;

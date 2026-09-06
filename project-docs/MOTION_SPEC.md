@@ -1,5 +1,7 @@
 # Movimento da tinta
 
+Revisão de intensidade solicitada pelo cliente: velocidade temporal de 0.11 para 0.22; amplitudes dos quatro vórtices de 0.35/0.28/0.23/0.28 para 0.60/0.50/0.44/0.48. Deslocamento de fundo de 0.08 para 0.12. Composição inicial preservada por compensação dos termos em cosseno. Mesmo orçamento de renderização e controles de pausa.
+
 Intenção: pigmento se move sozinho na abertura, criando continuidade orgânica dentro da estrutura tipográfica rígida. Rolagem normal, sem pin ou seek de vídeo. Fotos e botões têm respostas discretas ao hover.
 
 Orçamento: um quad e um programa WebGL; nenhum asset de terceiros, nenhuma textura por frame, nenhum pós processamento. Resolução limitada a 1 milhão de pixels e DPR máximo 1.25, alvo 30fps. Reduzir resolução caso intervalos medidos fiquem acima de 50ms de forma sustentada. Conteúdo HTML independente do canvas.
