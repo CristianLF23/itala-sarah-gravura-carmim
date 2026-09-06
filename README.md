@@ -50,3 +50,6 @@ MDN foi consultado para a implementação WebGL: https://developer.mozilla.org/e
 Código e shader originais. Fotografias autorizadas do projeto da Ítala, algumas com elementos incorporados das capturas do Instagram. Originais fotográficos e retrato real ainda podem melhorar o acabamento. Unbounded e DM Sans sob SIL Open Font License, com licenças na pasta fonts. Sem conteúdo de avaliações inventado, rastreamento, backend ou serviços pagos.
 
 A skill graphic-element-generation orientou a escolha do campo procedural e seus limites de densidade, textura, contraste e movimento. Direção e orçamento registrados em project-docs/GRAPHIC_LANGUAGE.md e MOTION_SPEC.md.
+# Revisão atual: Carmim e Crisântemos
+
+Tinta predominantemente preta e vermelha, nome editorial em Cormorant, crisântemos originais e dragão oriental de contorno no contato. Bastidores agora pertencem à seção O Processo. Detalhes em project-docs/CARMIM-CRISANTEMOS.md; esta revisão substitui as decisões tipográficas e cromáticas anteriores.
