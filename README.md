@@ -1,5 +1,18 @@
 # Ítala Sarah: capítulos e tinta em suspensão
 
+## Edição autoral vigente
+Lettering original em assets/itala-lettering.svg, desenhado em formas próprias para o nome da artista. O suminagashi segue em WebGL e agora ocupa um único canvas fixo em toda a página. Pointer events passivos deformam a tinta localmente e deixam o efeito dissipar. O controle Pausar tinta está disponível em todas as seções. A rolagem nativa é preservada.
+
+As seis obras agora abrem fichas com região do corpo, composição, descrição visual e visualização ampliada de detalhe da mesma foto. Os avisos pedem desenho preparatório, foto cicatrizada específica e relato da artista, sem inventar materiais ou atribuir uma foto de outra obra ao projeto.
+
+Retrato e três vídeos de bastidores têm placeholders editoriais explícitos, com instruções dirigidas à Ítala. Não existem vídeos fictícios, rostos sintéticos, botões de reprodução falsos ou ligações a arquivos ausentes.
+
+Blender 5.2.1 local foi utilizado: production/create_ink_scene.py gera a cena em relevo, luzes, material e animação de mapeamento de cinco segundos, mais dois renders. O master editável e os renders ficam no pacote de entrega, em production/blender. O WebP assets/ink-relief.webp foi gerado a partir do render e integrado aos espaços pendentes. A textura WebP tem cerca de 78KB. Nenhuma cena Blender é carregada no navegador.
+
+Higgsfield: instalação confirmada, mas conexão/ferramentas indisponíveis na sessão. Seedance: prompts e imagens de referência preparados em production/HIGGSFIELD-SEEDANCE.md; nenhuma geração remota ou consumo de créditos. O pacote pode ser utilizado para continuar após conexão e verificação de acesso.
+
+QA vigente: qa/authorial.cjs. Validado em 360/390/768/1440, incluindo resposta a toque real via eventos de toque do navegador emulado, fundo animado após a abertura, pausa global, fichas, detalhe, disclaimers, WhatsApp, ausência de emojis, ausência de overflow e alternativas sem JS/WebGL ou com movimento reduzido. Um gesto vertical emulado também confirmou rolagem nativa. Esse ambiente não substitui teste físico em iPhone. As seções abaixo descrevem a versão base; onde houver diferença, esta edição vigente prevalece.
+
 Revisão com suminagashi procedural animado, organização por trilhos verticais e conteúdo completo. Mobile first, sem emojis.
 
 ## Acessar

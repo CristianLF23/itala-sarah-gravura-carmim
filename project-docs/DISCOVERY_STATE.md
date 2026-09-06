@@ -1,5 +1,12 @@
 # Gravura Carmim
 
+## Revisão vigente: identidade autoral e fundo contínuo
+CONFIRMED: cliente autorizou todas as melhorias propostas, incluindo lettering próprio, tinta responsiva ao toque, fichas das obras e bastidores. Conteúdo ausente deve receber disclaimer. Solicitou fundo vivo no restante da página e autorizou exploração de Blender, Higgsfield e Seedance. Nenhum emoji.
+
+Implementação: lettering original desenhado em paths (SVG apenas para a marca; suminagashi continua canvas WebGL), uma cena de tinta fixa atrás dos capítulos, proteção de contraste por superfícies translúcidas, controle de pausa global e gesto por pointer events passivos. As seis obras têm descrição visual factual, região, composição e detalhe ampliado da mesma fotografia. Desenho preparatório, fotografia cicatrizada específica e relato da artista são pendentes explicitamente sinalizados.
+
+Retrato e três vídeos reais aguardam material, conforme avisos direcionados à Ítala. Blender 5.2.1 disponível localmente: cena em relevo, dois renders e master .blend gerados, com textura WebP incorporada ao site. Higgsfield teve instalação confirmada, mas conexão não concluída; ferramentas não disponíveis. Seedance não acionado e créditos não consumidos. Prompts e referências preparados em production/HIGGSFIELD-SEEDANCE.md. Gate PASS para entrega e publicação; geração remota não bloqueia a versão web.
+
 ## Revisão vigente: capítulos e suminagashi
 CONFIRMED: a simplificação anterior foi excessiva. Referência estrutural Faella Ink inspecionada ao vivo no desktop e mobile. Cliente pede nomes das seções verticais na lateral esquerda, conteúdo completo, suminagashi autônomo sem SVG, originalidade e nenhum emoji. Direção: brutalismo minimalista, nome da artista como abertura e quatro capítulos completos: portfólio, artista, processo e formulário com dúvidas. Sem transplante de identidade ou conteúdo da referência.
 

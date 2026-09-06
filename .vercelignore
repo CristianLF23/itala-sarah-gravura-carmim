@@ -4,6 +4,7 @@ prepare-assets.cjs
 serve.cjs
 README.md
 .git
+production
 assets/abertura.mp4
 assets/dragon-poster.webp
 assets/ink.webp

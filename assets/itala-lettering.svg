@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -30 645 325" fill="#e9e3d9">
+<title>Ítala Sarah</title>
+<desc>Lettering original de hastes afiladas, curvas amplas e cortes diagonais.</desc>
+<defs>
+<path id="i" d="M16 0H58L38 130H0Z M27 -10L51 -29H76L44 -10Z"/>
+<path id="t" d="M0 0H122L111 27H74L60 130H24L38 27H4Z"/>
+<path id="a" fill-rule="evenodd" d="M56 0H88L123 130H85L78 100H35L18 130H0ZM49 74H73L63 31Z"/>
+<path id="l" d="M18 0H54L39 100H111L96 130H0Z"/>
+<path id="s" d="M115 8L99 36C76 23 44 21 38 37C33 49 55 51 75 58C103 67 115 86 103 108C88 137 36 140 0 120L14 93C37 106 67 114 75 100C81 88 59 82 38 76C11 68 0 51 10 28C23 -2 80 -8 115 8Z"/>
+<path id="r" fill-rule="evenodd" d="M17 0H70C108 0 126 16 120 45C116 64 105 75 87 80L119 130H78L53 86H41L35 130H0ZM47 27L43 60H66C79 60 87 53 88 42C89 32 83 27 72 27Z"/>
+<path id="h" d="M17 0H54L47 49H90L98 0H135L116 130H78L86 80H43L36 130H0Z"/>
+</defs>
+<g><use href="#i"/><use href="#t" x="69"/><use href="#a" x="200"/><use href="#l" x="332"/><use href="#a" x="445"/></g>
+<g transform="translate(0 163)"><use href="#s"/><use href="#a" x="126"/><use href="#r" x="256"/><use href="#a" x="383"/><use href="#h" x="510"/></g>
+</svg>

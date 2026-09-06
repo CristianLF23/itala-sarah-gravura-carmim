@@ -1,5 +1,7 @@
 # Movimento da tinta
 
+Revisão de fundo contínuo: um canvas fixo ocupa o viewport e segue visível nos demais capítulos, substituindo a regra de pausa ao sair da abertura. Continua pausando quando o canvas está fora da viewport, aba oculta, modal aberto, pausa manual ou movimento reduzido. Nenhum segundo contexto WebGL. Deslocamento suave da composição acompanha o progresso da página. Gesto por pointer events passivos adiciona um vórtice local e dissipa sua influência; links, formulário e rolagem nativa preservados. O controle de pausa é global.
+
 Revisão de intensidade solicitada pelo cliente: velocidade temporal de 0.11 para 0.22; amplitudes dos quatro vórtices de 0.35/0.28/0.23/0.28 para 0.60/0.50/0.44/0.48. Deslocamento de fundo de 0.08 para 0.12. Composição inicial preservada por compensação dos termos em cosseno. Mesmo orçamento de renderização e controles de pausa.
 
 Intenção: pigmento se move sozinho na abertura, criando continuidade orgânica dentro da estrutura tipográfica rígida. Rolagem normal, sem pin ou seek de vídeo. Fotos e botões têm respostas discretas ao hover.
