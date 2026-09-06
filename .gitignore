@@ -1,0 +1,4 @@
+.vercel/
+qa/*.png
+qa/results.json
+qa/motion-results.json
