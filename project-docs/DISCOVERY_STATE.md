@@ -1,5 +1,12 @@
 # Gravura Carmim
 
+## Revisão vigente: capítulos e suminagashi
+CONFIRMED: a simplificação anterior foi excessiva. Referência estrutural Faella Ink inspecionada ao vivo no desktop e mobile. Cliente pede nomes das seções verticais na lateral esquerda, conteúdo completo, suminagashi autônomo sem SVG, originalidade e nenhum emoji. Direção: brutalismo minimalista, nome da artista como abertura e quatro capítulos completos: portfólio, artista, processo e formulário com dúvidas. Sem transplante de identidade ou conteúdo da referência.
+
+Gate PASS para desenvolvimento e publicação no projeto existente. Suminagashi procedural original em canvas WebGL com alternativa estática gerada do mesmo shader. Não é simulação física exata de tinta; a deformação é calculada em tempo real. Movimento de pigmento, textura, pausa e limite de resolução documentados em GRAPHIC_LANGUAGE.md e MOTION_SPEC.md. Sem dependências adicionais.
+
+Conteúdo: seis obras ampliáveis, fotografia real de tatuagem no capítulo da artista (retrato não recebido), três etapas do processo, registro cicatrizado, formulário de WhatsApp com quatro informações obrigatórias e nome opcional, três dúvidas. Atendimento e contatos mantidos. Nenhum depoimento fictício.
+
 ## Revisão vigente: simplificação
 CONFIRMED: o cliente considerou a versão anterior excessiva e proibiu totalmente emojis no site. A nova revisão tem quatro seções: abertura, seleção de quatro obras, apresentação breve e contato. Foram retirados ticker, selos, frases repetidas, galeria duplicada, filtros e vídeo. Fundo abstrato limitado à abertura com deslocamento sutil pela rolagem; fotos reais recebem o protagonismo. Controles em texto, sem emojis ou símbolos decorativos. Formulário preservado sob abertura opcional; WhatsApp permanece visível. Publicação no mesmo projeto GitHub/Vercel autorizada pela continuidade do pedido. Gate PASS: conteúdo, destino e objetivo mantidos.
 
