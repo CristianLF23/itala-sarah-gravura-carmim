@@ -1,5 +1,8 @@
 # Gravura Carmim
 
+## Revisão vigente: simplificação
+CONFIRMED: o cliente considerou a versão anterior excessiva e proibiu totalmente emojis no site. A nova revisão tem quatro seções: abertura, seleção de quatro obras, apresentação breve e contato. Foram retirados ticker, selos, frases repetidas, galeria duplicada, filtros e vídeo. Fundo abstrato limitado à abertura com deslocamento sutil pela rolagem; fotos reais recebem o protagonismo. Controles em texto, sem emojis ou símbolos decorativos. Formulário preservado sob abertura opcional; WhatsApp permanece visível. Publicação no mesmo projeto GitHub/Vercel autorizada pela continuidade do pedido. Gate PASS: conteúdo, destino e objetivo mantidos.
+
 ## Contexto e gate
 Redesign de portfólio autoral guiado por referências. Marca parcial refinada a partir da escolha expressa de Gravura Carmim. Gate PASS para implementação local completa em 6 de setembro de 2026.
 
