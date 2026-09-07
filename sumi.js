@@ -1,9 +1,9 @@
 (() => {
  'use strict';
- const canvas=document.querySelector('#sumi'),host=document.querySelector('.sumi-stage'),button=document.querySelector('#ink-toggle');
+ const canvas=document.querySelector('#sumi'),host=document.querySelector('.sumi-stage');
  if(!canvas||!host)return;
  const reduced=matchMedia('(prefers-reduced-motion: reduce)');
- let paused=false,visible=false,lost=false,raf=0,last=0,elapsed=0,drawn=0,quality=1,slow=0;
+ let visible=false,lost=false,raf=0,last=0,elapsed=0,drawn=0,quality=1,slow=0;
  let gl,program,buffer,uniforms;
  const gesture={x:.5,y:.5,tx:.5,ty:.5,strength:0,target:0,until:0,dx:0,dy:0,vx:0,vy:0,active:false};
  let scrollBlend=0;
@@ -60,10 +60,9 @@
  }
  function resize(){if(!gl||lost)return;const bounds=host.getBoundingClientRect();const dpr=Math.min(devicePixelRatio,1.25)*quality;const cap=Math.min(1,Math.sqrt(1000000/Math.max(1,bounds.width*bounds.height*dpr*dpr)));canvas.width=Math.max(1,Math.round(bounds.width*dpr*cap));canvas.height=Math.max(1,Math.round(bounds.height*dpr*cap));gl.viewport(0,0,canvas.width,canvas.height);draw();}
  function draw(){if(!gl||lost)return;if(reduced.matches||navigator.connection?.saveData){host.dataset.render='fallback';return;}gl.uniform2f(uniforms.res,canvas.width,canvas.height);gl.uniform1f(uniforms.time,elapsed);gl.uniform3f(uniforms.gesture,gesture.x,gesture.y,gesture.strength);gl.uniform2f(uniforms.flow,gesture.dx,gesture.dy);gl.uniform1f(uniforms.scroll,scrollBlend);gl.drawArrays(gl.TRIANGLES,0,6);host.dataset.render='webgl';canvas.dataset.frames=String(++drawn);}
- function allowed(){return visible&&!paused&&!reduced.matches&&!navigator.connection?.saveData&&!document.hidden&&!document.querySelector('dialog[open]')&&!lost;}
+ function allowed(){return visible&&!reduced.matches&&!navigator.connection?.saveData&&!document.hidden&&!document.querySelector('dialog[open]')&&!lost;}
  function tick(now){raf=0;if(!allowed()){sync();return;}if(!last)last=now;const delta=now-last;if(delta>=32){if(delta>50)slow++;else slow=Math.max(0,slow-1);elapsed+=Math.min(delta,75)/1000;last=now;if(now>gesture.until&&!gesture.active){gesture.target=0;gesture.vx*=.88;gesture.vy*=.88;}const dt=Math.min(delta,75)/1000;const follow=1.-Math.exp(-dt*18);gesture.x+=(gesture.tx-gesture.x)*follow;gesture.y+=(gesture.ty-gesture.y)*follow;gesture.dx+=(gesture.vx-gesture.dx)*follow;gesture.dy+=(gesture.vy-gesture.dy)*follow;gesture.strength+=(gesture.target-gesture.strength)*(1.-Math.exp(-dt*(gesture.target>gesture.strength?16:2.8)));const targetScroll=scrollY/Math.max(1,document.documentElement.scrollHeight-innerHeight);scrollBlend+=(targetScroll-scrollBlend)*.12;if(slow>50&&quality>.65){quality=.65;resize();slow=0;}draw();}raf=requestAnimationFrame(tick);}
- function sync(){cancelAnimationFrame(raf);raf=0;last=0;button.textContent=paused?'Retomar tinta':'Pausar tinta';button.setAttribute('aria-pressed',String(paused));if(reduced.matches||navigator.connection?.saveData){host.dataset.render='fallback';button.hidden=true;return;}button.hidden=!gl||lost;if(allowed()&&init()){button.hidden=false;raf=requestAnimationFrame(tick);}}
- button.addEventListener('click',()=>{paused=!paused;sync();});
+ function sync(){cancelAnimationFrame(raf);raf=0;last=0;if(reduced.matches||navigator.connection?.saveData){host.dataset.render='fallback';return;}if(allowed()&&init())raf=requestAnimationFrame(tick);}
  const excluded='a,button,input,textarea,select,summary,dialog,header,.artist';
  let touchId=null;
  function moveInk(x,y,first,touch){
@@ -73,7 +72,7 @@
   else{gesture.vx=Math.max(-.65,Math.min(.65,(nx-gesture.tx)*14));gesture.vy=Math.max(-.65,Math.min(.65,(ny-gesture.ty)*14));}
   gesture.tx=nx;gesture.ty=ny;gesture.target=touch?1.12:.55;gesture.until=performance.now()+220;
  }
- function enabled(event){return !paused&&!reduced.matches&&!navigator.connection?.saveData&&!event.target.closest(excluded);}
+ function enabled(event){return !reduced.matches&&!navigator.connection?.saveData&&!event.target.closest(excluded);}
  addEventListener('pointermove',event=>{if(event.pointerType==='mouse'&&enabled(event))moveInk(event.clientX,event.clientY,false,false);},{passive:true});
  // Passive touch tracking survives native scroll's pointercancel without intercepting scrolling.
  addEventListener('touchstart',event=>{
@@ -91,6 +90,6 @@
  document.addEventListener('visibilitychange',()=>{if(document.hidden)releaseTouch();});
  new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;sync();},{threshold:.01}).observe(host);
  new ResizeObserver(resize).observe(host);reduced.addEventListener('change',sync);document.addEventListener('visibilitychange',sync);document.addEventListener('ink-modal',sync);
- canvas.addEventListener('webglcontextlost',event=>{event.preventDefault();lost=true;cancelAnimationFrame(raf);host.dataset.render='fallback';button.hidden=true;});
+ canvas.addEventListener('webglcontextlost',event=>{event.preventDefault();lost=true;cancelAnimationFrame(raf);host.dataset.render='fallback';});
  canvas.addEventListener('webglcontextrestored',()=>{lost=false;gl=null;program=null;sync();});
 })();
