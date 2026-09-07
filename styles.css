@@ -40,8 +40,7 @@ dialog{max-width:1240px;background:#11100ff8}.lightbox-top{position:sticky;top:-
 @media(min-width:1100px){.hero h1{font-size:clamp(235px,21vw,325px);max-width:940px}.hero-copy{padding-top:185px;padding-bottom:145px}.flower-hero{width:590px;right:3%;top:135px}.flower-artist{width:215px}.process-conversation{margin-top:100px;padding-top:65px}}
 /* Prevent sideways page movement without creating a new vertical scroll container. */
 html,body{overflow-x:clip}
-.work-action{font-size:11px;min-height:44px;align-items:center;justify-content:center;margin-top:10px;padding:10px 8px;border:1px solid #b74e5b;background:#33151ced;color:#f1dfd7;text-align:center;transition:background .2s}
-.work:hover .work-action,.work:focus-visible .work-action{background:#8d1b29}
+.portfolio-notice{margin:0 0 30px;padding:18px 20px;border-left:3px solid #b92435;background:#e8e0d3;color:#38212a;font-size:15px;line-height:1.5}
 .floating-whatsapp{display:flex;align-items:center;justify-content:center;min-height:48px;padding:12px 17px;background:#b92435;color:#fff6ef;border:1px solid #e57281;font-size:12px;box-shadow:0 4px 20px #0006}
 .floating-whatsapp:hover{background:#8d1b29}
 .ambient-controls{bottom:calc(16px + env(safe-area-inset-bottom))}
